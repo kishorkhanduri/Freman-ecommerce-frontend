@@ -1,7 +1,7 @@
 export const lengha_page1 = [
   {
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/xif0q/lehenga-choli/u/g/a/free-half-sleeve-vbnd-fddj-astonblue-original-imagp286bmcaabbj.jpeg?q=70",
+      "https://rukminim2.flixcart.com/image/832/832/xif0q/lehenga-choli/h/h/z/free-na-big-patola-plain-trivety-original-imagxzg8kp9ymtaj.jpeg?q=70&crop=false",
     "brand": "AstonBlue",
    "title": "Self Design Semi Stitched Lehenga Choli",
     "color": "Yellow",
@@ -30,7 +30,7 @@ export const lengha_page1 = [
   },
   {
     "imageUrl":
-      "https://rukminim1.flixcart.com/imageUrl/612/612/kmz7qfk0/lehenga-choli/m/0/t/s-sleeveless-l032-rayie-collection-original-imagfrbqhvddrnbd.jpeg?q=70",
+      "https://rukminim2.flixcart.com/image/612/612/xif0q/lehenga-choli/f/c/1/free-full-sleeve-lehenga-lehenga-for-women-lehenga-choli-net-original-imahyz2vyszgq89z.jpeg?q=70",
     "brand": "rayie collection",
    "title": "Embroidered Stitched Lehenga & Crop Top",
     "color": "Black",

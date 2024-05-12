@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Dialog, Disclosure, Menu, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import {
@@ -12,20 +12,14 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
 import Pagination from "@mui/material/Pagination";
-
 import { filters, singleFilter, sortOptions } from "./FilterData";
 import ProductCard from "../ProductCard/ProductCard";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-// import { productdata } from "../../../../data";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
 import {
   findProducts,
 } from "../../../../Redux/Customers/Product/Action";
-import { deepPurple } from "@mui/material/colors";
-import { Backdrop, CircularProgress } from "@mui/material";
 import BackdropComponent from "../../BackDrop/Backdrop";
 
 function classNames(...classes) {
@@ -97,6 +91,7 @@ export default function Product() {
     sortValue,
     pageNumber,
     stock,
+    dispatch,
   ]);
 
   const handleFilter = (value, sectionId) => {
@@ -457,13 +452,13 @@ export default function Product() {
                 </form>
 
                 {/* Product grid */}
-                <div className="lg:col-span-4 w-full ">
-                  <div className="flex flex-wrap justify-center bg-white border py-5 rounded-md ">
-                    {customersProduct?.products?.content?.map((item, index) => (
-                      <ProductCard product={item} key={index} />
-                    ))}
+                  <div className="lg:col-span-4 w-full ">
+                    <div className="flex flex-wrap justify-center bg-white border py-5 rounded-md ">
+                      {customersProduct?.products?.content?.map((item) => (
+                        <ProductCard product={item} key={item.id} />
+                      ))}
+                    </div>
                   </div>
-                </div>
               </div>
             </div>
           </section>

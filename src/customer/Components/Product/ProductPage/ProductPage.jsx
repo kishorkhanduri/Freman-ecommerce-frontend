@@ -1,4 +1,3 @@
-import React from "react";
 import { productdata } from "../../../data";
 import ProductCard from "../ProductCard/ProductCard";
 
@@ -19,7 +18,7 @@ const ProductPage = () => {
 
         <div className="flex  flex-wrap justify-between w-[78%] bg-white border p-5 rounded-md">
           {productdata.map((item) => (
-            <ProductCard product={item} />
+            <ProductCard key={item.id} product={item} />
           ))}
         </div>
       </div>
